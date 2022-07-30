@@ -1,0 +1,132 @@
+<html>
+	<head>
+		<title>
+			My Term 1
+		</title>
+		<style>
+			ul.menu {
+				list-style-type: none;
+				padding: 0px;
+				background-color: rgb(0, 83, 161);
+				overflow: hidden;
+			}
+			ul.menu li {
+				float: left;
+			}
+			ul.menu li a {
+				display: block;
+				width: 5cm;
+				height: .7cm;
+				padding-top: 10px;
+				color: white;
+				text-align: center;
+				text-decoration: none;
+			}
+			ul.menu li a:hover {
+			  background-color: rgb(13, 140, 255);
+			}
+			img.logo
+			{
+				position:absolute;
+				top:0.5cm;
+				right:10px;
+				z-index:-1;
+			}
+			div.abstract
+			{
+				font-family: Helvetica;
+				text-align: center;
+				width: 15cm;
+				margin: 2cm auto 3cm auto;
+			}
+			div.abstract p
+			{
+				font-style: italic;
+				font-size: 20;
+			}
+			div.abstract p::first-letter
+			{
+				font-size: 200%;
+				color: rgb(0, 83, 161);
+			}
+			div.body
+			{
+				counter-reset: modules;
+				margin-left: auto;
+				margin-right: auto;
+				width: 20cm;
+			}
+			div.body h2::before {
+				counter-increment: modules;
+				content: "Module " counter(modules) ": ";
+			}
+			div.h2 {
+				font-family: Arial;
+			}
+			div.body p
+			{
+				font-family: Times New Roman;
+				font-size: 12pt;
+				text-align: justify;
+			}
+			div.footer
+			{
+				background-color: rgb(0, 83, 161);
+				color: white;
+				height: .7cm;
+				padding-top: 10px;
+				margin-top: 50px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<img class="logo" src="img/logo.png" width="400px">
+		<ul class="menu">
+			<li><a href="#ecm1400">ECM 1400</a></li>
+			<li><a href="#ecm1407">ECM 1407</a></li>
+			<li><a href="#ecm1410">ECM 1410</a></li>
+			<li><a href="#ecm1413">ECM 1413</a></li>
+		</ul>
+		<div class=abstract>
+			<h2>Abstract</h2>
+			<p>
+			The modules we outline here provide examples of what you can expect
+			to learn on this degree course based on recent academic teaching.
+			The precise modules available to you in future years may vary depending on
+			staff availability and research interests, new topics of study,
+			timetabling and student demand.</p>
+		</div>
+		<div class=body>
+		<h2 id="ecm1400">Programming</h2>
+		<p>
+			We use computers in almost all aspects of our daily lives and throughout science, so it is easy to take them for granted.
+			However, in order that we can use computers to solve new problems and create new things, we have to be able to program them.
+			This module introduces you to programming and problem solving with a computer.
+			You will learn how to formulate an algorithm to solve a problem, and you will acquire the skills to write, test and debug programs.
+		</p>
+		<h2 id="ecm1407">Social and Professional Issues of the Information Age</h2>
+		<p>
+			The module aims to provide you with the tools to reflect upon your role in the interface between digital technologies and society and on the moral and ethical use of information and information systems.
+			By taking this module, you will become aware of your legal responsibilities and rights as an IT professional and as a user of digital technologies.
+			The module will cover ethical theories, computer law and professional codes of conduct, and will address the ways in which broader areas of law (e.g. defamation, contracts, privacy and freedom of information legislation) impact upon technology users and IT professionals.
+		</p>
+		<h2 id="ecm1410">Object-Oriented Programming</h2>
+		<p>
+			This module will introduce you to object-oriented problem-solving methods and provide you with object-oriented (OO) techniques for the analysis, design and implementation of solutions.
+			We will introduce you to these concepts, and you will develop skills with a new programming language.
+			By the end of this module, you will be able to apply these skills to design and implement small applications.
+		</p>
+		<h2 id="ecm1413">Computers and the Internet</h2>
+		<p>
+		<p>
+			This module is designed to equip you with the foundational information you need to understand and work in business and technical fields requiring the use of computers and networking technologies.
+			Computing technology has a diversity of applications, so this module is suitable both for computer science students and for those pursuing other study disciplines.
+			On this module, you will acquire useful knowledge of computer systems, computer networks and information systems analysis and design.
+		</p>
+		</div>
+		<div class="footer">
+			This is a footer.
+		</div>
+	</body>
+</html>
